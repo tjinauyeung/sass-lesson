@@ -1,0 +1,12 @@
+.features {
+	display: flex;
+	min-height: 500px;
+	
+	.feature__column {
+		text-align: center;
+	}
+
+	.feature__heading {
+		@include font($primary-font, $primary-color, 16px);
+	}
+}

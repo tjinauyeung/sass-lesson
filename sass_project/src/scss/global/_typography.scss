@@ -1,0 +1,27 @@
+// MILO WEB FONTT
+$font-faces: (
+    null: 'MiloWeb.woff',
+    'Regular': 'MiloWeb.woff',
+    'Text': 'MiloWeb-Text.woff',
+    'Medium': 'MiloWeb-Medium.woff',
+    'Light': 'MiloWeb-Light.woff',
+    'LightItalic': 'MiloWeb-LightIta.woff',
+    'ExtraLight': 'MiloWeb-Extralight.woff'
+);
+
+@mixin font-faces {
+  @each $font-name, $font-file in $font-faces {
+    @if $font-name {
+      $font-name: 'MiloWeb-' + $font-name;
+    } @else {
+      $font-name: 'MiloWeb';
+    }
+
+    @font-face {
+      font-family: $font-name;
+      src: url('../fonts/milo/' + $font-file) format('woff');
+    }
+  }
+}
+
+@include font-faces;
