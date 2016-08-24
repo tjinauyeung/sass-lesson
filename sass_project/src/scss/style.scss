@@ -1,6 +1,8 @@
 // Settings
-@import 'global/settings';
+@import 'global/variables';
+@import 'global/mixins';
 
 // Components
 @import 'components/header';
+@import 'components/buttons';
  

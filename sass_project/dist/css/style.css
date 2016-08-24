@@ -2,6 +2,7 @@ body {
   margin: 0; }
 
 .header {
+  background: #4C426D;
   background: linear-gradient(#4C426D, #0D73D0);
   display: flex;
   flex-wrap: wrap;
@@ -26,3 +27,16 @@ body {
       float: left; }
   .header__body {
     text-align: center; }
+
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  text-align: center; }
+
+.btn--header {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: normal;
+  border: 1px solid #fff;
+  border-radius: 40px; }

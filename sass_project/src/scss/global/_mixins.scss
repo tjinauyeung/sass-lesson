@@ -1,0 +1,11 @@
+@mixin gradient($start-color, $end-color) {
+	background: $start-color;
+	background: linear-gradient($start-color, $end-color);
+}
+
+@mixin font($font, $size, $color, $font-weight: normal) {
+	font-family: $font;
+	font-size: $size;
+	color: $color;
+	font-weight: $font-weight;
+}

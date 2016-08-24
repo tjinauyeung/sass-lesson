@@ -3,7 +3,8 @@ body {
 }
 
 .header {
-	background: $primary-gradient;
+	@include gradient($primary-color, $secondary-color);
+	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
