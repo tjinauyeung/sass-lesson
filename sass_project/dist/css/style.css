@@ -1,2 +1,28 @@
+body {
+  margin: 0; }
+
 .header {
-  background: linear-gradient(#4C426D, #0D73D0); }
+  background: linear-gradient(#4C426D, #0D73D0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.header {
+  min-height: 90vh;
+  width: 100%; }
+  .header__nav {
+    padding: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .header__nav li {
+      display: inline-block;
+      float: right;
+      margin-left: 20px; }
+    .header__nav li:nth-child(1) {
+      float: left; }
+  .header__body {
+    text-align: center; }

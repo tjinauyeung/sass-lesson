@@ -1,3 +1,40 @@
+body {
+	margin: 0;
+}
+
 .header {
 	background: $primary-gradient;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+	min-height: 90vh;
+	width: 100%;
+
+	&__nav {
+		padding: 50px;
+		width: 100%;
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+
+		li {
+			display: inline-block;
+			float: right;
+			margin-left: 20px;
+		}
+
+		li:nth-child(1) {
+			float: left;
+		}
+	}
+
+	&__body {
+		text-align: center;
+	}
+
+
 }
