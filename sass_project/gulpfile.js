@@ -5,7 +5,7 @@ var runSequence = require('run-sequence');
 var del = require('del');
 
 gulp.task('scss', function() {
-	return gulp.src(['src/scss/*.scss'])
+	return gulp.src(['src/scss/**/*.scss', 'src/scss/*.scss'])
 		.pipe(sass())
 		.pipe(gulp.dest('dist/css/'))
 		.pipe(browserSync.stream());
@@ -18,7 +18,7 @@ gulp.task('copyFiles', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('src/scss/*.scss', ['scss']);
+	gulp.watch('src/scss/**', ['scss']);
 	gulp.watch('src/**/*', ['copyFiles']);
 });
 
