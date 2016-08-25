@@ -1,12 +1,27 @@
 .features {
 	display: flex;
-	min-height: 500px;
+
+	@include tablet {
+		flex-direction: column;
+		text-align: left;
+	}
+
+	@include mobile {
+		display: block;
+	}
 	
 	.feature__column {
 		text-align: center;
-	}
+		padding: 50px;
 
-	.feature__heading {
-		@include font($primary-font, $primary-color, 16px);
+		@include tablet {
+			display: flex;
+			align-items: center;
+			text-align: left;
+
+			article {
+				margin-left: 50px;
+			}
+		}
 	}
 }

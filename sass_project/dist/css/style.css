@@ -70,12 +70,21 @@ body {
   border-radius: 40px; }
 
 .features {
-  display: flex;
-  min-height: 500px; }
+  display: flex; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .features {
+      flex-direction: column;
+      text-align: left; } }
+  @media (max-width: 767px) {
+    .features {
+      display: block; } }
   .features .feature__column {
-    text-align: center; }
-  .features .feature__heading {
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: #4C426D;
-    color: 16px;
-    font-weight: normal; }
+    text-align: center;
+    padding: 50px; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .features .feature__column {
+        display: flex;
+        align-items: center;
+        text-align: left; }
+        .features .feature__column article {
+          margin-left: 50px; } }
